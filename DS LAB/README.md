@@ -8,3 +8,4 @@ To display the names and roll numbers of students
 4.
 Output Obtained : 
 
+![output](031.jpg)
