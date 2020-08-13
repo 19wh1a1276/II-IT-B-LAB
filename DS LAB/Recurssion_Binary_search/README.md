@@ -8,6 +8,6 @@
 3.Compare the elements in the array with key value and if we encounter  the key value it will return it's postion. If at all the key value not found it will return 'Element not found'
  ## Output Obtained :
 ### Output with key value = 66
-![output](binary66.JPG)
+![output](binaryR66.JPG)
 ### Output with key value = 0
-![output](binary0.JPG)
+![output](binaryR0.JPG)
