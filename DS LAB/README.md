@@ -9,3 +9,5 @@
  ## Output Obtained :
 ### Output with key value = 66
 ![output](linear.JPG)
+### Output with key value = 0
+![output](linear0.JPG)
