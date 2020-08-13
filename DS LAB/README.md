@@ -7,5 +7,5 @@
 
 3.Compare the elements in the array with key value and if we encounter  the key value it will return it's postion. If at all the key value not found it will return 'Element not found'
  ## Output Obtained :
-### Output with key value == 66
-![output](.jpg)
+### Output with key value = 66
+![output](linear.JPG)
