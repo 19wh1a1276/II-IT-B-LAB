@@ -1,0 +1,12 @@
+// Program no arguements and no return type passing to function. 
+#include <iostream>
+using namespace std;
+void HELLO(){
+    cout << "HELLO WORLD" << endl;
+    return ;
+}
+int main()
+{
+    HELLO();
+    return 0;
+}

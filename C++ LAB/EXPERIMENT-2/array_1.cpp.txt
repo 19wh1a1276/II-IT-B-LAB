@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a[5], i, n;
+    cout << "Enter array elements : ";
+    for(i =0; i< 5; i++){
+        cin >> a[i];
+    }
+    cout << "-------------------------------------------------------------------------------------------------------" << endl;
+    cout << "Elements in array are: " << endl; 
+    for(i =0; i< 5; i++){
+        cout << a[i] << "   ";
+    }
+    return 0;
+}

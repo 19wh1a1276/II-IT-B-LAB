@@ -1,0 +1,24 @@
+// Program to convert octal to decimal using functions. 
+#include <iostream>
+#include<math.h>
+using namespace std;
+int OctalDecimal(long int n)
+{
+    int rem, decimal = 0, i = 0;
+    while(n != 0){
+        rem = n % 10;
+        n = n / 10;
+        decimal = decimal + rem*pow(8, i);
+        ++i;
+    }
+    return decimal;
+}
+int main()
+{
+    long int n, result;
+    cout << "Enter octal value of a number: " ;
+    cin >> n ;
+    result = OctalDecimal(n);
+    cout << "DECIMAL EQUIVALENT OF OCTAL VALUE: " << result << endl;
+    return 0;
+}

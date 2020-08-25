@@ -1,0 +1,16 @@
+// Program no arguements and no return type passing to function. 
+#include <iostream>
+using namespace std;
+int  MULTIPLY(){
+    int a, b;
+    cout << "Enter two values: " << endl;
+    cin >> a >> b;
+    return a * b ;
+}
+int main()
+{
+    int multiplication;
+    multiplication = MULTIPLY();
+    cout << "Multiplication of two numbers using multiply as function : " << multiplication << endl;
+    return 0;
+}

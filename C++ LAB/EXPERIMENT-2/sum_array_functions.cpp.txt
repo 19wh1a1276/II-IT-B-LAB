@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int SUM(int* a, int n){
+    int i, sum = 0;
+    for(i=0; i< n; i++){
+        sum = sum + a[i];
+    }
+    return sum;
+}
+int main() {
+    int a[20], i, n,sum;
+    cout << "Enter size ofthe array: " ;
+    cin >> n;
+    cout << "\nEnter array elements : ";
+    for(i =0; i< n; i++){
+        cin >> a[i];
+    }
+    sum = SUM(a, n);
+    cout << "Sum of elements in array is: " << endl;
+    cout << sum << endl;
+    return 0;
+}

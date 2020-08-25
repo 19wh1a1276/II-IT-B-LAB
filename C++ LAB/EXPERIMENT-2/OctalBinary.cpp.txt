@@ -1,0 +1,29 @@
+// Program to convert octal to binary using functions. 
+#include <iostream>
+#include<math.h>
+using namespace std;
+int OctalBinary(long int n)
+{
+    long int  decimal = 0, binary = 0, i = 0;
+    while(n != 0){
+        decimal = decimal + (n % 10)*pow(8, i);
+        ++i;
+        n = n / 10;
+    }
+    i = 1;
+    while(decimal != 0){
+        binary = binary + (decimal % 2) * i;
+        decimal =  decimal / 2;
+        i = i*10;
+    }
+    return binary;
+}
+int main()
+{
+    long int n, result;
+    cout << "Enter octal value of a number: " ;
+    cin >> n ;
+    result = OctalBinary(n);
+    cout << "BINARY EQUIVALENT OF OCTAL VALUE: " << result << endl;
+    return 0;
+}

@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+int isprime(int n){
+    int i, s =0;
+    for(i = 1; i < n; i++){
+        if (n % i == 0){
+            s++;
+        } 
+    }
+    return s;
+}
+void prime(int a, int b){
+    int i;
+    for(i = a+1 ; i < b; i++ ){
+        if (isprime(i) == 1){
+            cout << i << "   ";
+        }
+    }
+}
+int main() {
+    int i, a, b;
+    cout << "Enter lower bound value : ";
+    cin >> a ;
+    cout << "Enter upper bound value : ";
+    cin >> b ;
+    if (a < b){
+        cout << "Prime Numbers between lower and upper bound values are: " << endl;
+        prime(a, b);
+    }
+    else {
+        cout << " Incorrect lower and upper bound values" << endl;
+    }
+    return 0;
+}

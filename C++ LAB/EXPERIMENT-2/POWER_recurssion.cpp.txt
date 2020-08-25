@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int POWER(int a, int b)
+{
+    if (b == 0)
+      return 1;
+    else if(b > 0)
+      return a*POWER(a, b-1);
+}
+
+int main() {
+    int a, b, result;
+    cout << "Enter the values of a & b : ";
+    cin >> a >> b;
+    result = POWER(a, b);
+    cout << a << " POWER " << b << " is " << result << endl; 
+    return 0;
+}

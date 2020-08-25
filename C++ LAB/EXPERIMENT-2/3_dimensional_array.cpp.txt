@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a[3][3][3], i, j, k;
+    cout << "Enter array elements : ";
+    for(i =0; i< 3; i++){
+        for(j=0;j<3;j++){           
+            for(k=0; k<3; k++){
+                cin >> a[i][j][k];
+            }
+        }
+    }
+    cout << "Elements in array are: " << endl;
+    for(i=0; i<3; i++)
+    {
+        for(j=0;j<3;j++){
+            for(k=0; k<3; k++){
+                cout << a[i][j][k]<<"   ";
+            }
+            "\n";
+        }
+        "\n\n";
+    }
+    return 

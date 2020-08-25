@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a[7], b[7], i;
+    cout << "Enter temperature of city1 : ";
+    for(i =0; i< 7; i++){
+        cin >> a[i];
+    }
+    cout << "Enter temperature of city2 : ";
+    for(i =0; i< 7; i++){
+        cin >> b[i];
+    }
+    cout << "Temperature of a week of city1 : " << endl; 
+    for(i =0; i< 7; i++){
+        cout << a[i];
+    }
+    cout << "\nTemperature of a week of city2 : " << endl; 
+    for(i =0; i< 7; i++){
+        cout << b[i];
+    }
+    return 0;
+}

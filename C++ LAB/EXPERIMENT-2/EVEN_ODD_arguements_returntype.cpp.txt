@@ -1,0 +1,22 @@
+// Program to find sum of N natural numbers using recursion. 
+#include <iostream>
+using namespace std;
+int EVEN_ODD(int n) {
+   if(n % 2 ==  0)
+   return 0;
+   else
+   return 1;
+}
+int main() {
+   int n ;
+   cout << "Enter the value of n: ";
+   cin >> n;
+   EVEN_ODD(n);
+   if(EVEN_ODD(n) == 0){
+       cout<<n<<" is even"<< endl;
+   }
+   else{
+       cout << n << " is odd"<< endl;
+   }
+   return 0;
+}

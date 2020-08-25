@@ -1,0 +1,24 @@
+// Program to convert binary to decimal using functions. 
+#include <iostream>
+#include<math.h>
+using namespace std;
+int BinaryDecimal(long int n)
+{
+    int rem, decimal = 0, i = 0;
+    while(n != 0){
+        rem = n % 10;
+        n = n / 10;
+        decimal = decimal + rem*pow(2, i);
+        i++;
+    }
+    return decimal;
+}
+int main()
+{
+    long int n, result;
+    cout << "Enter binary value of a number: " ;
+    cin >> n ;
+    result = BinaryDecimal(n);
+    cout << "DECIMAL EQUIVALENT OF BINARY VALUE: " << result << endl;
+    return 0;
+}

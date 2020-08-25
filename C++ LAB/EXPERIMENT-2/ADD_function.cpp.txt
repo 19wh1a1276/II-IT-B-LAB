@@ -1,0 +1,17 @@
+// Program to print addition of 2 numbers using add function. 
+#include <iostream>
+using namespace std;
+int ADD(int a, int b)
+{
+    return a + b ;
+}
+int main()
+{
+    int a, b, addition;
+    cout << "Enter two integer values: " << endl;
+    cin >> a >> b;
+    addition = ADD(a, b);
+    cout << "ADDITION OF TWO NUMBERS USING FUNCTIONS: " << addition << endl;
+    return 0;
+}
+
